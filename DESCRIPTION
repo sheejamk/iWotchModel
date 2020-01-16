@@ -1,0 +1,36 @@
+Type: Package
+Package: iWotchModel
+Title: Decision Analysis Model for I-WOTCH 
+Version: 0.1.0
+Authors@R: 
+    c(person(given = "Sheeja",
+             family = "Manchira Krishnan",
+             role = c("aut", "cre"),
+             email = "sheeja.manchirakrishnan@york.ac.uk",
+             comment = c(ORCID = "0000-0001-5076-1172"))
+      )
+Maintainer: Sheeja Manchira Krishnan<sheeja.manchirakrishnan@york.ac.uk>
+Description: A collection of functions that implements the Decision Analysis in R 
+  to construct model-based cost-effectiveness analysis for I-WOTCH study. 
+License: GNU General Public License
+Depends:
+    R (>= 3.5.0)
+Imports:
+    dplyr,
+    utils,
+    stats,
+    IPDFileCheck,
+    data.table,
+    methods,
+    valueEQ5D
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: 
+    knitr
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+Roxygen: list(markdown = TRUE)
+URL: https://github.com/sheejamk/iWotchModel
+BugReports: https://github.com/sheejamk/iWotchModel/issues

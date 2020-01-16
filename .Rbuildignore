@@ -1,0 +1,5 @@
+^.*\.Rproj$
+^\.Rproj\.user$
+^_travis.yml$
+^cran-comments.md$
+^data-raw$
