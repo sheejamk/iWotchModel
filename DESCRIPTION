@@ -19,10 +19,11 @@ Imports:
     dplyr,
     utils,
     stats,
-    IPDFileCheck,
     data.table,
     methods,
-    valueEQ5D
+    IPDFileCheck,
+    valueEQ5D,
+    MarkovModel
 Suggests: 
     knitr,
     rmarkdown
