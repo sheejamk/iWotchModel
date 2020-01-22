@@ -10,8 +10,7 @@ Authors@R:
              comment = c(ORCID = "0000-0001-5076-1172"))
       )
 Maintainer: Sheeja Manchira Krishnan<sheeja.manchirakrishnan@york.ac.uk>
-Description: A collection of functions that implements the Decision Analysis in R 
-  to construct model-based cost-effectiveness analysis for I-WOTCH study. 
+Description: Decision Analysis in R to construct model-based cost-effectiveness analysis for I-WOTCH study. 
 License: GNU General Public License
 Depends:
     R (>= 3.5.0)
@@ -23,7 +22,7 @@ Imports:
     methods,
     IPDFileCheck,
     valueEQ5D,
-    MarkovModel
+    DecisionAnalysisModel
 Suggests: 
     knitr,
     rmarkdown
