@@ -1,0 +1,24 @@
+Drug,Form,Strength,StrengthUnit,Preparation,UnitCost,Size,SizeUnit
+Buprenorphine,Tablet,0.2,mg,,0.504,,
+Buprenorphine,Tablet,0.4,mg,,0.496955357,,
+Buprenorphine,Tablet,2,mg,,0.459533613,,
+Buprenorphine,Tablet,8,mg,,0.417355655,,
+Buprenorphine,Injection,0.3,mg/ml, 300micrograms/1ml ,0.492,,
+Buprenorphine,Injection,50,mg/ml,16mg/0.32ml,55.93,,
+Buprenorphine,Injection,50,mg/ml, 24mg/0.48ml,55.93,,
+Buprenorphine,Injection,50,mg/ml,32mg/0.64ml,55.93,,
+Buprenorphine,Injection,50,mg/ml,8mg/0.16ml ,55.93,,
+Buprenorphine,Injection,355.5555556,mg/ml,128mg/0.36ml ,239.7,,
+Buprenorphine,Injection,355.5555556,mg/ml,64mg/0.18ml,239.7,,
+Buprenorphine,Injection,355.5555556,mg/ml, 96mg/0.27ml ,239.7,,
+Buprenorphine,Patches,5,microgram/hour,,0.88,,
+Buprenorphine,Patches,10,microgram/hour,,0.78875,,
+Buprenorphine,Patches,15,microgram/hour,,0.819166667,,
+Buprenorphine,Patches,20,microgram/hour,,0.71825,,
+Buprenorphine,Patches,35,microgram/hour,,0.112857143,,
+Buprenorphine,Patches,52.5,microgram/hour,,0.112904762,,
+Buprenorphine,Patches,70,microgram/hour,,0.112857143,,
+Morphine,Liquids,2,mg/ml,10mg/5ml,2.08,100,ml
+Morphine,Liquids,2,mg/ml,10mg/5ml,6.57,300,ml
+Morphine,Liquids,2,mg/ml,10mg/5ml,9.61,500,ml
+Morphine,Liquids,20,mg/ml,20mg/ml ,19.5,120,ml

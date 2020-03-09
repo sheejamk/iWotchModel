@@ -1,5 +1,5 @@
-
-
+# Trying with some fixed values of parameters including utility and costs
+library(packDAMipd)
 ## initiliase the health states
 LTOT <- health_state("LTOT","cost_LTOT","util_LTOT")
 IT <- health_state("IT","cost_IT","util_IT")
@@ -91,13 +91,13 @@ param_control <- define_parameters(
 ## intervention markov
 health_states <- combine_state(LTOT,IT,PT,SOLMP,DH)
 interv_strategy <- strategy(trans_matrix_intervention, health_states, "intervention")
-interv_markov <-markov_model(interv_strategy, 4, c(1,0,0,0,0),c(0,0,0,0,0),discount=c(0,0),param_interv)
+interv_markov <- markov_model(interv_strategy, 4, c(1,0,0,0,0), c(0,0,0,0,0), c(0,0,0,0,0), discount=c(0,0),param_interv)
 plot_model(interv_markov)
 #
 ## control markov
 health_states <- combine_state(LTOT,PT,SOLMP,DH)
 control_strategy <- strategy(trans_matrix_control, health_states, "control")
-control_markov <-markov_model(control_strategy, 4, c(1,0,0,0),c(0,0,0,0),discount=c(0,0),param_control)
+control_markov <-markov_model(control_strategy, 4, c(1,0,0,0), c(0,0,0,0),c(0,0,0,0),discount=c(0,0),param_control)
 plot_model(control_markov)
 
 list_markov <- combine_markov(control_markov,interv_markov)

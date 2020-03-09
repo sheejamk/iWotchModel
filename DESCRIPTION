@@ -7,7 +7,7 @@ Authors@R:
              family = "Manchira Krishnan",
              role = c("aut", "cre"),
              email = "sheeja.manchirakrishnan@york.ac.uk",
-             comment = c(ORCID = "0000-0001-5076-1172"))
+             comment = c(ORCID = "0000-0001-8574-695X"))
       )
 Maintainer: Sheeja Manchira Krishnan<sheeja.manchirakrishnan@york.ac.uk>
 Description: Decision Analysis in R to construct model-based cost-effectiveness analysis for I-WOTCH study. 
@@ -15,6 +15,7 @@ License: GNU General Public License
 Depends:
     R (>= 3.5.0)
 Imports:
+    tidyverse,
     dplyr,
     utils,
     stats,
@@ -22,7 +23,8 @@ Imports:
     methods,
     IPDFileCheck,
     valueEQ5D,
-    DecisionAnalysisModel
+    packDAMipd,
+    expss
 Suggests: 
     knitr,
     rmarkdown
