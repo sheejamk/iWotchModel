@@ -3,9 +3,11 @@ library(packDAMipd)
 ##  Load the required data files - IPD trial data, unit cost data for medication
 i_wotch_data_file = system.file("extdata","trial_data.csv", package = "iWotchModel")
 med_costs_file = system.file("extdata", "costs_per_dosage.csv", package = "iWotchModel")
+resource_use_costs_file = system.file("extdata", "costs_resource_use.csv", package = "iWotchModel")
 
 iwotch_trial_data <- load_trial_data(i_wotch_data_file)
 med_costs <- load_trial_data(med_costs_file)
+unit_cost_data = load_trial_data(resource_use_costs_file)
 
 ##  details of arms and timepoints
 arm_details <- get_trial_arm_details(iwotch_trial_data)
@@ -21,7 +23,7 @@ adl_details = get_outcome_details(iwotch_trial_data, "ADL","tpi_Pain", multiple 
 shows_details = get_outcome_details(iwotch_trial_data, "ShOWS","qsy_Symp", multiple = TRUE)
 eq5d_details <- get_eq5d_details(iwotch_trial_data)
 
-##  For total data set caluculate outcomes
+##  For total data set calculate outcomes
 iwotch_trial_data_ADL = value_ADL_scores_IPD(iwotch_trial_data,"tpi_Pain",adl_scoring = adl_scoring, adl_nrcode = NA)
 iwotch_trial_data_Shows = value_Shows_IPD(iwotch_trial_data_ADL,"qsy_Symp", shows_nrcode = NA)
 iwotch_trial_data_eq5d = value_eq5d5L_IPD(iwotch_trial_data_Shows, eq5d_nrcode = NA)
@@ -41,14 +43,29 @@ patches_tablets = microcosting_tablets(patches, "Drug", "tab_dosage", "tab_dosag
                                NULL,
                                list(c("Once a day", "bd", "once weekly"), c(1,2,3)),
                                list(c("mcg","mg", "gm"), c(1,2,3)), "tab_equiv_dose")
-
 iwotch_trial_data_allmed = microcosting_liquids(patches_tablets, "Drug", "liq_dosage", "liquid_dose_unit", "liquid_bottle_size",
-                               "liquid_bottle_remain_time",  "day", med_costs, "UnitCost",
+                               "liquid_bottle_remain_time",  NULL, med_costs, "UnitCost",
                                "StrengthUnit", "Strength",list(c("4 weeks", "1 week"), c(1,2)),
-                               preparation = NULL, NULL, NULL, "liquid_equiv_dose")
+                               preparation = NULL, NULL, NULL, NULL, "liquid_equiv_dose")
 
-cols = c("totcost_liquids_timeperiod_equiv_dose", "totcost_patches_timeperiod_equiv_dose", "totcost_tablets_timeperiod_equiv_dose")
-iwotch_trial_data_allmed[["all_medications_timeperiod"]]<- all_med %>% select(cols) %>% transmute(all_medications_timeperiod=rowSums(., na.rm = TRUE))
+
+## total medication costs
+cols = c("totcost_liquids_timeperiod_equiv_dose", "totcost_patches_timeperiod_equiv_dose",
+         "totcost_tablets_timeperiod_equiv_dose")
+
+medication_sum <- 0
+for(i in 1:length(cols)){
+  this_col <- iwotch_trial_data_allmed[[cols[i]]]
+  this_col[is.na(this_col)] <- 0
+  medication_sum <- medication_sum + this_col
+}
+iwotch_trial_data_allmed[["all_medications_timeperiod"]]<- medication_sum
+
+## Costs for resource use
+inpatient_admission = costing_resource_use(iwotch_trial_data_allmed, "tru_ResAdmittedInpatient","rip_StayLength",
+                           "rip_NHSHospital","day", unit_cost_data, "Inpatient hospital admissions","UnitCost",
+                           "UnitUsed", list(c("Yes", "No"), c(1,2)), list(c("Yes", "No"), c(1,2)))
+
 
 
 
@@ -105,9 +122,9 @@ for (i in 1:no_timepoints) {
   this_med_costs <- t(this_med_costs)
   colnames(this_med_costs) = c("Medcosts_intervention (Mean per patient)","Medcosts_control (Mean per patient)",
                                "Medcosts_intervention (Total)","Medcosts_control (Total)")
-
-
   rownames(this_med_costs) <-  time_desc_from_code
   med_costs = rbind(med_costs,this_med_costs)
 
 }
+
+

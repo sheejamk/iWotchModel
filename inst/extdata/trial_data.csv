@@ -1,19 +1,19 @@
-pat_TrialArm,SEX,age,Drug,tpi_Timepoint,Start Dose,start.MME,Final Dose,end.MME,Reduction months,qol_Mobility,qol_SelfCare,qol_UsualActivity,qol_Pain,qol_Anxiety,tpi_PainDayToDayActivities,tpi_PainWorkAroundHome,tpi_PainParticipateSocial,tpi_PainHouseholdChores,tpi_PainUsuallyDoForFun,tpi_PainEnjoySocial,tpi_PainEnjoyLife,tpi_PainFamilyLife,qsy_SympFeelingSick,qsy_SympStomachCramps,qsy_SympMuscleSpasms,qsy_SympFeelColdness,qsy_SympHeartPounding,qsy_SympMuscularTension,qsy_SympAches,qsy_SympYawning,qsy_SympRunnyEyes,qsy_SympInsomnia,patch_strength,patch_dose_unit,patch_no_taken,patch_frequency,patch_equiv_dose,tab_dosage,tab_dosage_unit,tab_no_taken,tab_frequency,tab_equiv_dose,liq_dosage,liquid_dose_unit,liquid_bottle_size,liquid_bottle_remain_time,liquid_equiv_dose
-N,f,44,Buprenorphine,2,300ML/WEEK,86,0,0,3,1,3,2,5,1,1,1,4,4,4,3,1,4,4,2,3,4,1,4,3,2,2,1,20,1,5,3,100,,,,,,,,,,
-N,f,30,Buprenorphine,1,200mcg,480,50mcg,120,13,3,5,5,2,3,4,2,4,1,5,4,1,4,1,4,3,3,3,4,3,4,2,1,5,1,2,3,37.5,,,,,,,,,,
-N,M,21,Buprenorphine,2,40mg bd,80,0,0,2,4,1,1,2,3,1,1,5,5,1,5,1,1,2,2,4,3,2,3,2,3,1,3,10,1,1,1,31,,,,,,,,,,
-N,M,43,Buprenorphine,2,200mg BD,40,,0,3,3,5,4,5,1,2,2,5,1,4,2,1,2,2,1,2,4,2,1,3,1,3,1,15,1,2,1,75,,,,,,,,,,
-Y,F,37,Buprenorphine,2,30mg bd (60mg),60,,0,2,1,3,4,5,1,2,1,2,1,5,4,5,3,2,3,3,4,3,1,1,4,3,3,70,1,2,1,10,,,,,,,,,,
-Y,F,73,Buprenorphine,1,30mg bd (60mg),91,,0,2,3,1,2,3,2,1,1,5,2,4,1,5,2,3,1,2,4,3,3,2,3,2,4,70,1,4,1,25,,,,,,,,,,
-N,F,46,Buprenorphine,1,75mcg/h,180,,0,3,5,1,3,1,2,3,4,4,1,2,5,4,1,1,3,2,2,3,3,2,1,1,3,10,1,5,1,100,,,,,,,,,,
-N,F,53,BUPRENORPHINE,1,6ml/6 doses/day,545,,0,5,5,1,4,5,1,1,4,1,1,2,2,3,1,1,4,1,2,3,3,1,3,3,1,20,1,4,1,35,,,,,,,,,,
-N,F,84,BUPRENORPHINE,1,200mg BD,40,,0,8,2,2,5,4,5,1,2,4,3,2,4,2,3,1,4,2,1,1,1,1,1,4,1,10,1,5,2,17.5,,,,,,,,,,
-N,F,87,BUPRENORPHINE,1,60mg BD,120,,0,4,3,2,3,2,4,5,3,4,1,5,4,1,1,4,1,2,3,1,4,4,4,4,1,5,1,2,2,2.5,,,,,,,,,,
-N,F,65,Buprenorphine,1,62mcg,150,,0,4,4,2,4,1,2,4,1,2,5,2,2,5,4,4,3,2,2,3,1,4,2,4,3,10,1,7,2,6,,,,,,,,,,
-Y,M,75,Buprenorphine,2,150mcg,360,25mcg,60,5,2,1,5,2,4,1,3,2,4,5,4,4,5,1,2,2,1,2,4,4,2,2,4,,,,,,8,2,1,1,40,,,,,
-N,F,35,Buprenorphine,2,40mg bd,80,,0,6,1,5,3,1,5,5,2,3,1,5,4,2,5,1,3,2,3,2,3,3,2,1,4,,,,,,2,2,3,2,45,,,,,
-N,F,53,Buprenorphine,2,20mcg/hour,48,20mcg/h,48,0,5,4,3,3,5,2,5,1,4,4,2,5,1,4,2,4,1,1,4,3,3,3,1,,,,,,8,2,4,1,65,,,,,
-N,F,82,Buprenorphine,2,200mg bd,400,,0,2,5,5,4,3,3,5,2,4,3,1,5,1,2,1,2,4,3,3,3,1,2,2,4,,,,,,2,2,6,2,63,,,,,
-N,F,78,Morphine,1,70 bd,140,10gm bd,20,10,5,2,1,2,5,5,5,1,1,4,3,4,1,3,4,4,3,3,4,4,3,3,3,,,,,,,,,,,2,mg/ml,100,2 weeks,300
-N,F,64,Morphine,2,1200ml/month,80,,0,6,5,1,3,4,1,3,1,5,5,5,4,2,1,2,4,2,2,1,2,3,4,3,2,,,,,,,,,,,2,mg/ml,300,1 month,6
-N,F,40,Morphine,2,70mg bd,140,,0,8,2,2,3,2,2,2,3,5,1,3,2,2,5,4,4,2,4,1,1,3,4,1,1,,,,,,,,,,,2,mg/ml,500,5 days,1200
+pat_TrialArm,SEX,age,Drug,tpi_Timepoint,Start Dose,start.MME,Final Dose,end.MME,Reduction months,qol_Mobility,qol_SelfCare,qol_UsualActivity,qol_Pain,qol_Anxiety,tpi_PainDayToDayActivities,tpi_PainWorkAroundHome,tpi_PainParticipateSocial,tpi_PainHouseholdChores,tpi_PainUsuallyDoForFun,tpi_PainEnjoySocial,tpi_PainEnjoyLife,tpi_PainFamilyLife,qsy_SympFeelingSick,qsy_SympStomachCramps,qsy_SympMuscleSpasms,qsy_SympFeelColdness,qsy_SympHeartPounding,qsy_SympMuscularTension,qsy_SympAches,qsy_SympYawning,qsy_SympRunnyEyes,qsy_SympInsomnia,patch_strength,patch_dose_unit,patch_no_taken,patch_frequency,patch_equiv_dose,tab_dosage,tab_dosage_unit,tab_no_taken,tab_frequency,tab_equiv_dose,liq_dosage,liquid_dose_unit,liquid_bottle_size,liquid_bottle_remain_time,liquid_equiv_dose,tru_ResAdmittedInpatient,rip_StayLength,rip_NHSHospital,tru_ResAdmittedDayCare,rdc_NHSHospital,tru_ResAdmittedSocialCare,rsc_Service,rsc_ServiceUsed,rsc_NumberOfContacts
+N,f,44,Buprenorphine,2,300ML/WEEK,86,0,0,3,1,3,2,5,1,1,1,4,4,4,3,1,4,4,2,3,4,1,4,3,2,2,1,20,1,5,3,100,,,,,,,,,,,1,1,1,2,2,2,,2,
+N,f,30,Buprenorphine,1,200mcg,480,50mcg,120,13,3,5,5,2,3,4,2,4,1,5,4,1,4,1,4,3,3,3,4,3,4,2,1,5,1,2,3,37.5,,,,,,,,,,,1,2,1,2,2,2,,2,
+N,M,21,Buprenorphine,2,40mg bd,80,0,0,2,4,1,1,2,3,1,1,5,5,1,5,1,1,2,2,4,3,2,3,2,3,1,3,10,1,1,1,31,,,,,,,,,,,2,3,2,1,1,2,,2,
+N,M,43,Buprenorphine,2,200mg BD,40,,0,3,3,5,4,5,1,2,2,5,1,4,2,1,2,2,1,2,4,2,1,3,1,3,1,15,1,2,1,75,,,,,,,,,,,2,4,2,1,1,2,,2,
+Y,F,37,Buprenorphine,2,30mg bd (60mg),60,,0,2,1,3,4,5,1,2,1,2,1,5,4,5,3,2,3,3,4,3,1,1,4,3,3,70,1,2,1,10,,,,,,,,,,,2,23,2,2,2,1,GP surgery visit,1,4
+Y,F,73,Buprenorphine,1,30mg bd (60mg),91,,0,2,3,1,2,3,2,1,1,5,2,4,1,5,2,3,1,2,4,3,3,2,3,2,4,70,1,4,1,25,,,,,,,,,,,,,,,,,,,
+N,F,46,Buprenorphine,1,75mcg/h,180,,0,3,5,1,3,1,2,3,4,4,1,2,5,4,1,1,3,2,2,3,3,2,1,1,3,10,1,5,1,100,,,,,,,,,,,,,,,,,,,
+N,F,53,BUPRENORPHINE,1,6ml/6 doses/day,545,,0,5,5,1,4,5,1,1,4,1,1,2,2,3,1,1,4,1,2,3,3,1,3,3,1,20,1,4,1,35,,,,,,,,,,,,,,,,,,,
+N,F,84,BUPRENORPHINE,1,200mg BD,40,,0,8,2,2,5,4,5,1,2,4,3,2,4,2,3,1,4,2,1,1,1,1,1,4,1,10,1,5,2,17.5,,,,,,,,,,,,,,,,,,,
+N,F,87,BUPRENORPHINE,1,60mg BD,120,,0,4,3,2,3,2,4,5,3,4,1,5,4,1,1,4,1,2,3,1,4,4,4,4,1,5,1,2,2,2.5,,,,,,,,,,,,,,,,,,,
+N,F,65,Buprenorphine,1,62mcg,150,,0,4,4,2,4,1,2,4,1,2,5,2,2,5,4,4,3,2,2,3,1,4,2,4,3,10,1,7,2,6,,,,,,,,,,,,,,,,,,,
+Y,M,75,Buprenorphine,2,150mcg,360,25mcg,60,5,2,1,5,2,4,1,3,2,4,5,4,4,5,1,2,2,1,2,4,4,2,2,4,,,,,,8,2,1,1,40,,,,,,,,,,,,,,
+N,F,35,Buprenorphine,2,40mg bd,80,,0,6,1,5,3,1,5,5,2,3,1,5,4,2,5,1,3,2,3,2,3,3,2,1,4,,,,,,2,2,3,2,45,,,,,,,,,,,,,,
+N,F,53,Buprenorphine,2,20mcg/hour,48,20mcg/h,48,0,5,4,3,3,5,2,5,1,4,4,2,5,1,4,2,4,1,1,4,3,3,3,1,,,,,,8,2,4,1,65,,,,,,,,,,,,,,
+N,F,82,Buprenorphine,2,200mg bd,400,,0,2,5,5,4,3,3,5,2,4,3,1,5,1,2,1,2,4,3,3,3,1,2,2,4,,,,,,2,2,6,2,63,,,,,,,,,,,,,,
+N,F,78,Morphine,1,70 bd,140,10gm bd,20,10,5,2,1,2,5,5,5,1,1,4,3,4,1,3,4,4,3,3,4,4,3,3,3,,,,,,,,,,,2,mg/ml,100 ml,2 weeks,300,,,,,,,,,
+N,F,64,Morphine,2,1200ml/month,80,,0,6,5,1,3,4,1,3,1,5,5,5,4,2,1,2,4,2,2,1,2,3,4,3,2,,,,,,,,,,,2,mg/ml,300 ml,1 month,6,,,,,,,,,
+N,F,40,Morphine,2,70mg bd,140,,0,8,2,2,3,2,2,2,3,5,1,3,2,2,5,4,4,2,4,1,1,3,4,1,1,,,,,,,,,,,2,mg/ml,500 ml,5 days,1200,,,,,,,,,

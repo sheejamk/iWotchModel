@@ -102,6 +102,4 @@ list_markov <- combine_markov(control_markov,interv_markov)
 result<-calculate_icer_nmb(list_markov = list_markov, threshold = 2000, comparator = "control")
 plotceac<-plot_ceac(list_markov,threshold_values = seq(1000,20000,1000),comparator = "control")
 plotceac
-#
-#
-#
+
